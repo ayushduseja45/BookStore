@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../public/Banner.png";
+import banner from "/Banner.png";
 function Banner() {
   return (
     <>
@@ -11,11 +11,9 @@ function Banner() {
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
             <p className="text-sm md:text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+            Discover a world of stories, knowledge, and adventure. Whether you're looking for the latest bestsellers, timeless classics, or hidden gems, you'll find them all here. Explore our carefully curated collection, find your next great read, and let your literary journey begin. Happy reading!
             </p>
-            <label className="input input-bordered flex items-center gap-2">
+            {/* <label className="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -26,9 +24,9 @@ function Banner() {
                 <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
               </svg>
               <input type="text" className="grow" placeholder="Email" />
-            </label>
+            </label> */}
           </div>
-          <button className="btn mt-6 btn-secondary">Get Started</button>
+          <a href="/course"><button className="btn mt-6 btn-secondary">Get Started</button></a>
         </div>
         <div className=" order-1 w-full mt-20 md:w-1/2">
           <img

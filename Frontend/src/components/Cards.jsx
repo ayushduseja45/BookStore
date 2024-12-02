@@ -1,29 +1,25 @@
+
 import React from "react";
 
 function Cards({ item }) {
   return (
-    <>
-      <div className="mt-4 my-3 p-3">
-        <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
-          <figure>
-            <img src={item.image} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              {item.name}
-              <div className="badge badge-secondary">{item.category}</div>
-            </h2>
-            <p>{item.title}</p>
-            <div className="card-actions justify-between">
-              <div className="badge badge-outline">${item.price}</div>
-              <div className=" cursor-pointer px-2 py-1 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200">
-                Buy Now
-              </div>
-            </div>
-          </div>
+    <div className="min-w-[300px] w-[300px] h-[350px] p-4">
+      <div className="bg-white shadow-md rounded-lg overflow-hidden h-full">
+        <div className="h-[150px] flex items-center justify-center overflow-hidden">
+          <img
+            src={item.image}
+            alt={item.title}
+            className="object-cover w-full h-full" // Cover the full height and width of the wrapper
+          />
+        </div>
+        <div className="p-4">
+          <h3 className="text-lg font-semibold">{item.title}</h3>
+          <p className="text-sm text-gray-600">By {item.author}</p>
+          <p className="text-sm text-gray-500 mt-2 truncate">{item.description}</p>
+          <span className="block mt-4 font-bold text-green-500">{item.price}</span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
